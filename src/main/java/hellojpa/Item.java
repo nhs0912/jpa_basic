@@ -11,7 +11,6 @@ public class Item {
     @Column(name = "ITEM_ID")
     private Long id;
 
-
     private String name;
     private int price;
     private int stockQuantity;
@@ -20,8 +19,8 @@ public class Item {
 
     }
 
-    @ManyToMany(mappedBy = "items")
-    private List<Category> categories = new ArrayList<>();
+//    @ManyToMany(mappedBy = "items")
+//    private List<Category> categories = new ArrayList<>();
 
     public Long getId() {
         return id;

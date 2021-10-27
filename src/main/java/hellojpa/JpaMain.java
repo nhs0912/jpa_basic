@@ -14,18 +14,18 @@ public class JpaMain {
         EntityTransaction tx = entityManager.getTransaction();
         tx.begin();
         try {
-            Member member = saveMember(entityManager);
-
-            Team team = new Team();
-            team.setName("teamA");
-            team.getMembers().add(member);
-
-            entityManager.persist(team);
-
-            Locker locker = new Locker();
-            locker.setName("testLocker");
-            entityManager.persist(locker);
-            tx.commit();
+//            Member member = saveMember(entityManager);
+//
+//            Team team = new Team();
+//            team.setName("teamA");
+//            team.getMembers().add(member);
+//
+//            entityManager.persist(team);
+//
+//            Locker locker = new Locker();
+//            locker.setName("testLocker");
+//            entityManager.persist(locker);
+//            tx.commit();
         } catch (Exception e) {
             tx.rollback();
         } finally {
